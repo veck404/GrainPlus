@@ -8,7 +8,8 @@ Based on the current implementation, the website includes:
 
 - **Dynamic Content:** Most of the text and image content is managed through centralized data files in `src/data`, making it easy to update.
 - **Core Services Display:** Sections dedicated to showcasing key services like:
-  - Sea / Air Freight Forwarding
+  - Road, Sea, and Air Freight Forwarding
+  - Road, Sea, and Air Freight Forwarding
   - Customs Clearance
   - Warehousing & Storage
   - Transportation

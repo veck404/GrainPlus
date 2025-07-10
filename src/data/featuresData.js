@@ -1,6 +1,6 @@
 export const featuresData = [
   {
-    fistFeature: "Sea / Air Freight Forwarding,",
+    fistFeature: "Road, Sea, and Air Freight Forwarding",
     secondFeature: "Custom Clearance,",
   },
   {

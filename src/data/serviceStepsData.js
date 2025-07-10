@@ -9,7 +9,7 @@ export const serviceData = [
   },
   {
     icon: <BsIcons.BsAirplane />,
-    title: "Sea / Air Freight Forwarding",
+    title: "Road, Sea, and Air Freight Forwarding",
     detail:
       "The rates are directly taken from NVOCC's and MTO to reduce the intermediation of any other FF agents to reduce the cost as much as possible",
   },
