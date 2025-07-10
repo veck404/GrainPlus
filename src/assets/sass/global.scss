@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgb(233, 211, 115);
+  color: black;
+}
+
+.img_el::before {
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+.img_el::after {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.contact_ref {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.63) 30%, rgb(0, 0, 0, 0.63)), url('../../assets/images/contact_container_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
