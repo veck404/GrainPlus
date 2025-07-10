@@ -1,6 +1,6 @@
 import React from "react";
-// import * as BsIcons from "react-icons/bs";
-// import { featuresData } from "../data/featuresData";
+import { BsPlus } from "react-icons/bs";
+import { featuresData } from "../data/featuresData";
 import { progressData } from "../data/progressData";
 import ExternalLink from "./externalLink";
 
@@ -44,32 +44,38 @@ const LogisticsCapabilities = ({ showLink }) => {
                 chains, the navigators of global trade, and the enablers of
                 business growth.
               </p>
-              {/* <div
+              <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="mt-14">
+                className="mt-14"
+              >
                 {featuresData.map((features, index) => {
                   const { fistFeature, secondFeature } = features;
                   return (
                     <div
                       className="md:grid grid-cols-2 font-jost block gap-4 w-full"
-                      key={index}>
+                      key={index}
+                    >
                       <div>
                         <div className="flex gap-1 items-center">
-                          <BsIcons.BsPlus className="text-lg text-gray-700" />
-                          <p className="text-gray-700 text-lg text-semibold">{fistFeature}</p>
+                          <BsPlus className="text-lg text-gray-700" />
+                          <p className="text-gray-700 text-lg text-semibold">
+                            {fistFeature}
+                          </p>
                         </div>
                       </div>
                       <div>
                         <div className="flex gap-1 items-center">
-                          <BsIcons.BsPlus className="text-lg text-gray-700" />
-                          <p className="text-gray-700 text-lg text-semibold">{secondFeature}</p>
+                          <BsPlus className="text-lg text-gray-700" />
+                          <p className="text-gray-700 text-lg text-semibold">
+                            {secondFeature}
+                          </p>
                         </div>
                       </div>
                     </div>
                   );
                 })}
-              </div> */}
+              </div>
             </div>
             <div className="content_wrap_two text-center md:text-left w-full md:w-1/2">
               <div className="progress_wrap mt-5 lg:pl-12">

@@ -18,7 +18,7 @@ const HomePage = () => {
       <LogisticsCapabilities showLink={true} />
       <FeaturesSlider />
       <ServiceSteps />
-      <ChooseUs floatDiraction={"ml-auto"} />
+      <ChooseUs floatDirection={"ml-auto"} />
       <CarouselSlider />
       <Triumphs />
       <ContactRef />

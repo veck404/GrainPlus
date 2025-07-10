@@ -17,12 +17,12 @@ export const serviceData = [
     icon: <BsIcons.BsStack />,
     title: "Warehousing and Storage",
     detail:
-      "We do provide Warehouse facility to the Client's if required. We have tie up with multiple Warehouse's near Nhava Sheva location",
+      "We do provide Warehouse facility to our Clients if required. We have tie up with multiple Warehouse's across various locations in the Nigeria.",
   },
   {
     icon: <BsIcons.BsTruck />,
     title: "Transportation",
     detail:
-      "We make sure after Custom Formalities are done, the cargo has to be deliver to Client's location as quickly and efficiently",
+      "We make sure after Custom Formalities are done, the cargo has to be deliver to Client's location as quickly and efficiently as possible.",
   },
 ];

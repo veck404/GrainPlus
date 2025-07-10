@@ -11,6 +11,7 @@ const CarouselSlider = () => {
   return (
     <>
       <section className="py-[5rem] overflow-hidden bg-white">
+        {/* Container for the slider */}
         <div className="px-[20px] lg:px-[0px] w-full">
           <Swiper
             data-aos="fade-left"
@@ -33,24 +34,31 @@ const CarouselSlider = () => {
               depth: 100,
               modifier: 2.5,
             }}
-            className="flex justify-center">
+            className="flex justify-center"
+          >
+            {/* Map through imageSliderData to render each slide */}
             {imageSliderData.map((sliderData, index) => {
               const { imageUrl, description } = sliderData;
               return (
                 <SwiperSlide
                   key={index}
                   className="m-[40px] shadow-2xl
-                ">
+                "
+                >
+                  {/* Image container for each slide */}
                   <div className="h-[400px] flex items-center">
                     <img src={imageUrl} width={"100%"} alt={description} />
                   </div>
                 </SwiperSlide>
               );
             })}
+            {/* Navigation buttons */}
             <div className="flex items-center justify-center gap-4">
+              {/* Previous button */}
               <button className="h-[50px] prev_btn w-[50px] text-gray-800 rounded-[50%] border border-gray-800 flex items-center justify-center">
                 <AiIcons.AiOutlineArrowLeft />
               </button>
+              {/* Next button */}
               <button className="h-[50px] w-[50px] next_btn text-gray-800 rounded-[50%] border border-gray-800 flex items-center justify-center">
                 <AiIcons.AiOutlineArrowRight />
               </button>

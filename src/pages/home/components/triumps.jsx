@@ -10,7 +10,8 @@ const Triumphs = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-gray-800 mt-[50px] font-[700] text-[40px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]">
+            className="text-gray-600 mt-[50px] font-[700] text-[40px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
+          >
             Our Prestigious Clients
           </h1>
           <hr className="mt-9" />
@@ -24,7 +25,8 @@ const Triumphs = () => {
           <h3
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="mt-8 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-gray-800 font-[400]">
+            className="mt-8 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-gray-600 font-[400]"
+          >
             Beyond Boundaries: Our Project Narratives
           </h3>
           <div className="mt-9"></div>

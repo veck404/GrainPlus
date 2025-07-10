@@ -21,7 +21,7 @@ const Footer = () => {
                   data-aos-duration="2000"
                   className="text-3xl tracking-widest font-jost leading-[24px] font-normal uppercase"
                 >
-                  GrainPlus Logistics <br /> <br />.
+                  GrainPlus Logistics <br /> <br />
                 </h1>
               </Link>
 
@@ -30,16 +30,17 @@ const Footer = () => {
                 data-aos-duration="2000"
                 className="w-full mt-4 font-jost md:w-8/12 text-gray-500 lg:leading-8 lg:text-lg"
               >
-                Address: Elita Building, Office No- 3 & 4 Sec- 06, Plot no-21,
-                Kamothe, Navi Mumbai, 410209
+                <span className="font-semibold">Address: </span> Off KM 11,
+                Hadejia Road, Kano, Nigeria.
               </p>
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
                 className="w-full mt-4 font-jost md:w-8/12 text-gray-500 lg:leading-8 lg:text-lg"
               >
-                Email: GrainPluslogistics2017@gmail.com Phone no: 9702043415 ,
-                <br></br> 8356920370
+                <span className="font-semibold">Email: </span>
+                info@grainplus.org <br /> <br />
+                <span className="font-semibold">Phone: </span> +234 809 360 5855
               </p>
             </div>
           </div>

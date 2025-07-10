@@ -5,12 +5,15 @@ const FeaturesSlider = () => {
   return (
     <>
       <section className="features_slider relative h-[55vh]">
+        {/* Container for the marquee effect, positioned at the bottom */}
         <div className="absolute bottom-0 left-0 right-0">
+          {/* Marquee element for scrolling text */}
           {/* eslint-disable-next-line */}
           <marquee
-            className="text-white mb-3"
+            className="text-white mb-3" // Tailwind classes for text color and margin
             behavior="scroll"
-            direction="left">
+            direction="left"
+          >
             <div className="flex gap-[3rem]">
               {featuresData.map((features, index) => {
                 const { fistFeature, secondFeature } = features;

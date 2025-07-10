@@ -41,7 +41,7 @@ const Navbar = () => {
         className="mx-full flex items-center justify-between px-[20px] lg:px-[100px]"
         aria-label="Global"
       >
-        {!mobileMenuOpen && !navbarBgChanged && (
+        {/* {!mobileMenuOpen && !navbarBgChanged && (
           <img
             data-aos="fade-right"
             data-aos-duration="2000"
@@ -49,8 +49,8 @@ const Navbar = () => {
             alt="Logo"
             className="w-[20%] md:w-[10%] mr-3 md:mr-5"
           />
-        )}
-        {!mobileMenuOpen && navbarBgChanged && (
+        )} */}
+        {/* {!mobileMenuOpen && navbarBgChanged && (
           <img
             data-aos="fade-right"
             data-aos-duration="2000"
@@ -58,7 +58,7 @@ const Navbar = () => {
             alt="Logo"
             className="w-[20%] md:w-[10%] mr-3 md:mr-5"
           />
-        )}
+        )} */}
 
         <div className="flex lg:flex-1">
           {!mobileMenuOpen && (
@@ -69,7 +69,7 @@ const Navbar = () => {
               <h1
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="text-1.5xl tracking-widest font-jost leading-[24px] font-normal uppercase mr-5"
+                className="text-2xl tracking-widest font-jost leading-[24px] font-normal uppercase mr-5"
               >
                 GrainPlus Logistics <br></br>
               </h1>
