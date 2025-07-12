@@ -10,7 +10,7 @@ import "swiper/css/autoplay";
 const CarouselSlider = () => {
   return (
     <>
-      <section className="py-[5rem] overflow-hidden bg-white">
+      <section className="py-[5rem] overflow-hidden bg-gray-200">
         {/* Container for the slider */}
         <div className="px-[20px] lg:px-[0px] w-full">
           <Swiper
@@ -55,11 +55,11 @@ const CarouselSlider = () => {
             {/* Navigation buttons */}
             <div className="flex items-center justify-center gap-4">
               {/* Previous button */}
-              <button className="h-[50px] prev_btn w-[50px] text-gray-800 rounded-[50%] border border-gray-800 flex items-center justify-center">
+              <button className="h-[50px] prev_btn w-[50px] text-green-500 rounded-[50%] border border-green-500 flex items-center justify-center">
                 <AiIcons.AiOutlineArrowLeft />
               </button>
               {/* Next button */}
-              <button className="h-[50px] w-[50px] next_btn text-gray-800 rounded-[50%] border border-gray-800 flex items-center justify-center">
+              <button className="h-[50px] w-[50px] next_btn text-green-500 rounded-[50%] border border-green-500 flex items-center justify-center">
                 <AiIcons.AiOutlineArrowRight />
               </button>
             </div>

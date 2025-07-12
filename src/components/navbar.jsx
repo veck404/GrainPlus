@@ -33,7 +33,7 @@ const Navbar = () => {
     <header
       className={
         navbarBgChanged
-          ? "bg-white fixed top-0 left-0 w-[100vw] z-20 duration-500 shadow-md py-4"
+          ? "bg-slate-200 fixed top-0 left-0 w-[100vw] z-20 duration-500 shadow-md py-4"
           : "bg-transparent fixed top-0 left-0 w-[100vw] z-20 duration-500 py-4"
       }
     >
@@ -60,6 +60,7 @@ const Navbar = () => {
           />
         )} */}
 
+        {/* Logo/Brand Name Section */}
         <div className="flex lg:flex-1">
           {!mobileMenuOpen && (
             <Link
@@ -76,6 +77,7 @@ const Navbar = () => {
             </Link>
           )}
         </div>
+        {/* Mobile Menu Button */}
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -93,7 +95,8 @@ const Navbar = () => {
             />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-10 lg:items-center">
+        {/* Desktop Navigation Links */}
+        <Popover.Group className="hidden lg:flex lg:gap-x-10 lg:items-center hover:">
           {navbarLinks.map((links, index) => {
             const { name, linkPath } = links;
             return (
@@ -102,8 +105,8 @@ const Navbar = () => {
                 to={linkPath}
                 className={
                   navbarBgChanged
-                    ? "no-underline tracking-widest font-jost px-[10px] duration-500  text-gray-900 text-lg font-light"
-                    : "no-underline tracking-widest font-jost px-[10px] duration-500  text-white text-lg font-light "
+                    ? "no-underline tracking-widest font-jost px-[10px] duration-500  text-gray-900 text-lg font-light hover:text-green-500"
+                    : "no-underline tracking-widest font-jost px-[10px] duration-500  text-white text-lg font-light hover:text-green-500"
                 }
               >
                 {name}
@@ -114,15 +117,16 @@ const Navbar = () => {
             to={"/contact"}
             data-aos="fade-left"
             data-aos-duration="2000"
-            className="no-underline ml-[50px]"
+            className="no-underline ml-[50px] hover:scale-105 duration-500"
           >
             <Button
               variant={navbarBgChanged ? "black" : "white"}
               ringVariant={navbarBgChanged ? "ring-black" : "ring-white"}
-              text={"Get Started"}
+              text={"Talk to us!"}
             />
           </Link>
         </Popover.Group>
+        {/* Mobile Dialog Panel */}
       </nav>
       <Dialog
         as="div"

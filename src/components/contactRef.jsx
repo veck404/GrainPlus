@@ -6,14 +6,14 @@ import contactBackground from "../assets/images/contact_container_bg.jpg";
 const ContactRef = () => {
   return (
     <>
-      <section className="pt-[5rem] bg-white overflow-hidden">
+      <section className="pt-[5rem] bg-gray-100 overflow-hidden">
         <div className="px-[20px] lg:px-[100px] w-full">
           <h1
             data-aos="fade-right"
             data-aos-duration="2000"
             className="text-gray-600 mt-[50px] font-[700] text-[35px] leading-[40px] md:text-[66px] font-outfit md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
           >
-            Get in touch
+            Write to us
           </h1>
         </div>
         <div

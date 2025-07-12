@@ -21,7 +21,7 @@ const HomePage = () => {
       <ChooseUs floatDirection={"ml-auto"} />
       <CarouselSlider />
       <Triumphs />
-      <ContactRef />
+      {/* <ContactRef /> */}
     </>
   );
 };

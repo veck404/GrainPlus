@@ -10,12 +10,12 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="w-full bg-white overflow-hidden py-[5rem] ">
-        <div class="h-1 bg-gray-400 mb-10 rounded-full mx-4 md:mx-10"></div>
+      <footer className="w-full bg-green-800 overflow-hidden py-[5rem] ">
+        <div class="h-1 bg-white mb-10 rounded-full mx-4 md:mx-10"></div>
         <div className="md:flex gap-4 px-[20px] lg:px-[100px]">
           <div className="md:basis-1/2">
             <div>
-              <Link to="/" className="text-gray-900">
+              <Link to="/" className="text-white">
                 <h1
                   data-aos="fade-up"
                   data-aos-duration="2000"
@@ -28,7 +28,7 @@ const Footer = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="w-full mt-4 font-jost md:w-8/12 text-gray-500 lg:leading-8 lg:text-lg"
+                className="w-full mt-4 font-jost md:w-8/12 text-white lg:leading-8 lg:text-lg"
               >
                 <span className="font-semibold">Address: </span> Off KM 11,
                 Hadejia Road, Kano, Nigeria.
@@ -36,7 +36,7 @@ const Footer = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="w-full mt-4 font-jost md:w-8/12 text-gray-500 lg:leading-8 lg:text-lg"
+                className="w-full mt-4 font-jost md:w-8/12 text-white lg:leading-8 lg:text-lg"
               >
                 <span className="font-semibold">Email: </span>
                 info@grainplus.org <br /> <br />
@@ -48,12 +48,12 @@ const Footer = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="2000"
-              className="text-3xl text-gray-900 tracking-widest font-jost leading-[24px] font-normal uppercase"
+              className="text-3xl text-white tracking-widest font-jost leading-[24px] font-normal uppercase"
             >
-              Quick Links.
+              Quick Links
             </h1>
 
-            <div className="mt-4">
+            <div className="mt-10">
               {topLinkNavLinks.map((data, index) => {
                 const { linkPath, name } = data;
                 return (
@@ -61,11 +61,11 @@ const Footer = () => {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                     key={index}
-                    className="w-full lg:leading-8 lg:text-lg"
+                    className="w-full lg:leading-8 lg:text-lg mb-3"
                   >
                     <Link
                       to={linkPath}
-                      className="no-underline text-gray-500 font-jost"
+                      className="no-underline text-white font-jost"
                     >
                       {name}
                     </Link>
@@ -78,9 +78,9 @@ const Footer = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="2000"
-              className="text-3xl text-gray-900 tracking-widest font-jost leading-[24px] font-normal uppercase"
+              className="text-3xl text-white tracking-widest font-jost leading-[24px] font-normal uppercase"
             >
-              Support Links.
+              Support Links
             </h1>
 
             <div className="mt-4">
@@ -92,11 +92,11 @@ const Footer = () => {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                     key={index}
-                    className="w-full lg:leading-8 lg:text-lg"
+                    className="w-full lg:leading-8 lg:text-lg mb-4"
                   >
                     <Link
                       to={path}
-                      className="no-underline text-gray-500 font-jost"
+                      className="no-underline text-white font-jost"
                     >
                       {linkName}
                     </Link>
@@ -106,8 +106,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-14 font-jost text-center text-gray-500">
-          &copy; {currentYear} GrainPlus Logistics. All rights reserved
+        <div className="mt-14 font-jost text-center text-white ">
+          &copy; {currentYear} GrainPlus Logistics. All rights reserved.
         </div>
       </footer>
     </>

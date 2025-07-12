@@ -5,15 +5,15 @@ import Projects from "../../../components/projects";
 const Triumphs = () => {
   return (
     <>
-      <section className="pt-[1rem] pb-[5rem] overflow-hidden bg-white">
+      <section className="pt-[1rem] pb-[5rem] overflow-hidden bg-gray-100">
         <div className="px-[20px] lg:px-[100px] w-full">
-          <h1
+          <h2
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-gray-600 mt-[50px] font-[700] text-[40px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
+            className="text-green-600 mt-[50px] font-[700] text-[30px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[90px] xl:leading-[90px]"
           >
             Our Prestigious Clients
-          </h1>
+          </h2>
           <hr className="mt-9" />
           {/* <div className="mt-2">
             <ExternalLink
@@ -25,7 +25,7 @@ const Triumphs = () => {
           <h3
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="mt-8 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-gray-600 font-[400]"
+            className="mt-8 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-green-700 font-[400]"
           >
             Beyond Boundaries: Our Project Narratives
           </h3>

@@ -11,7 +11,7 @@ const ChooseUs = ({ floatDiraction }) => {
           <h1
             data-aos={`fade-right`}
             data-aos-duration="2000"
-            className="text-gray-800 font-outfit mt-[50px] font-[700] text-[40px] leading-[40px] md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
+            className="text-green-500 font-outfit mt-[50px] font-[700] text-[40px] leading-[40px] md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
           >
             About Us
           </h1>
@@ -22,7 +22,7 @@ const ChooseUs = ({ floatDiraction }) => {
                 <h3
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="mt-5 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-gray-800 font-[400]"
+                  className="mt-5 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-green-500 font-[400]"
                 >
                   We are Quick, Efficient, and Reliable.
                 </h3>
