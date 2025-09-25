@@ -133,11 +133,11 @@ const Navbar = () => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-green-800 px-6 py-black6 sm:max-w-sm sm:ring-1 sm:ring-offset-gray-300">
           <div className="flex items-center justify-between">
             <Link
               to="/"
-              className="-m-1.5 p-1.5 text-gray-900"
+              className="-m-1.5 p-1.5 text-gray-300 pt-6"
               onClick={() => setMobileMenuOpen(false)}
             >
               <h1 className="text-[24px] leading-[22px] font-[600] uppercase">
@@ -148,7 +148,7 @@ const Navbar = () => {
               type="button"
               className={
                 navbarBgChanged
-                  ? "-m-2.5 rounded-md p-2.5 text-gray-900"
+                  ? "-m-2.5 rounded-md p-2.5 text-white/100"
                   : "-m-2.5 rounded-md p-2.5 text-white"
               }
               onClick={() => setMobileMenuOpen(false)}
@@ -157,7 +157,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="mt-8 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-white">
               <div className="space-y-2 py-6">
                 {navbarLinks.map((links, index) => {
                   const { name, linkPath } = links;
@@ -165,7 +165,7 @@ const Navbar = () => {
                     <Link
                       key={index}
                       to={linkPath}
-                      className="-mx-3 block rounded-lg px-3 border-gray-200 border-b py-4 text-[20px] font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 border-white/20 border-b py-4 text-[20px] font-semibold leading-7 text-gray-300 hover:bg-green-700/20"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {name}
