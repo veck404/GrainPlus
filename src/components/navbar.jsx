@@ -31,7 +31,7 @@ const Navbar = () => {
     <header
       className={
         navbarBgChanged
-          ? "fixed top-0 left-0 w-full z-30 duration-300 shadow-md py-3 bg-white/80 backdrop-blur-md"
+          ? "fixed top-0 left-0 w-full z-30 duration-300 shadow-md py-3 bg-green-800 backdrop-blur-md"
           : "fixed top-0 left-0 w-full z-30 duration-300 py-4 bg-transparent"
       }
     >
@@ -63,7 +63,7 @@ const Navbar = () => {
           {!mobileMenuOpen && (
             <Link
               to="/"
-              className={navbarBgChanged ? "text-gray-900" : "text-white"}
+              className={navbarBgChanged ? "text-white" : "text-white"}
             >
               <h1
                 data-aos="fade-right"
@@ -103,7 +103,7 @@ const Navbar = () => {
                 to={linkPath}
                 className={
                   navbarBgChanged
-                    ? "no-underline tracking-widest font-jost px-[10px] duration-500  text-gray-900 text-lg font-light hover:text-green-500"
+                    ? "no-underline tracking-widest font-jost px-[10px] duration-500  text-white text-lg font-light hover:text-green-500"
                     : "no-underline tracking-widest font-jost px-[10px] duration-500  text-white text-lg font-light hover:text-green-500"
                 }
               >

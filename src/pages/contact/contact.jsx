@@ -24,13 +24,13 @@ const Contact = () => {
     <div>
       <Banner />
       <div className="flex justify-center items-center mt-5 mb-10">
-        <h1
+        <h2
           data-aos={`fade-right`}
           data-aos-duration="2000"
-          className="text-gray-800 font-outfit mt-[50px] font-[700] text-[35px] leading-[35px] md:text-[px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
+          className="text-green-900 font-outfit mt-[50px] font-[700] text-[35px] leading-[35px] md:text-[66px] md:leading-[66px] xl:text-[90px] xl:leading-[90px]"
         >
           Contact Us
-        </h1>
+        </h2>
       </div>
       <div className="m-5 px-4 md:px-8 lg:px-16">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">

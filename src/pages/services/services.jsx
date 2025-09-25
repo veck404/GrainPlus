@@ -13,7 +13,7 @@ const Services = () => {
         <h1
           data-aos={`fade-right`}
           data-aos-duration="2000"
-          className="text-gray-800 font-outfit font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
+          className="text-green-900 font-outfit font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
         >
           Our Services
         </h1>
