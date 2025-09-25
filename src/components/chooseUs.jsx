@@ -8,13 +8,13 @@ const ChooseUs = ({ floatDiraction }) => {
     <>
       <section className="py-[5rem] bg-white overflow-hidden">
         <div className="px-[20px] lg:px-[100px] w-full">
-          <h1
+          <h2
             data-aos={`fade-right`}
             data-aos-duration="2000"
-            className="text-green-500 font-outfit mt-[50px] font-[700] text-[40px] leading-[40px] md:text-[66px] md:leading-[66px] xl:text-[114px] xl:leading-[114px]"
+            className="text-green-500 font-outfit mt-[50px] font-[600] text-[40px] leading-[40px] md:text-[66px] md:leading-[66px] xl:text-[90px] xl:leading-[90px]"
           >
-            About Us
-          </h1>
+            Why Us
+          </h2>
           <hr className="mt-9" />
           <div className="mt-8">
             <div className="block xl:flex gap-[5rem]">
@@ -99,7 +99,7 @@ const ChooseUs = ({ floatDiraction }) => {
                   >
                     <img
                       src={CargoImage}
-                      className="w-full h-56 md:h-72 object-cover"
+                      className="w-full h-56 md:h-96 md:w-96 object-cover"
                       alt="cargo ship"
                     />
                   </div>
