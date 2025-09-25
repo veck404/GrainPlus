@@ -4,7 +4,7 @@ import "./assets/sass/about.scss";
 import ChooseUs from "../../components/chooseUs";
 import AboutSales from "./components/aboutSales";
 import SalesTwo from "./components/salesTwo";
-import ContactRef from "../../components/contactRef";
+// import ContactRef from "../../components/contactRef";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
       <ChooseUs />
       <AboutSales />
       <SalesTwo />
-      <ContactRef />
+      {/* <ContactRef /> */}
     </>
   );
 };

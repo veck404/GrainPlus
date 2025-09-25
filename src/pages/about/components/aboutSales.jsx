@@ -24,15 +24,15 @@ const AboutSales = () => {
                   Elevating Business through Next-Level Logistics
                 </h3>
                 <div className="my-5">
-                    <div className="rounded-lg overflow-hidden shadow-sm sm:shadow-md transform transition-transform duration-300 hover:scale-[1.02] hover:-translate-y-1 active:shadow-lg">
-                      <img
-                        data-aos="fade-right"
-                        data-aos-duration="2000"
-                        src={aboutSalesImage}
-                        alt="cargo ship"
-                        className="w-full h-48 md:h-64 lg:h-72 object-cover"
-                      />
-                    </div>
+                  <div className="rounded-lg overflow-hidden shadow-sm sm:shadow-md transform transition-transform duration-300 hover:scale-[1.02] hover:-translate-y-1 active:shadow-lg">
+                    <img
+                      data-aos="fade-right"
+                      data-aos-duration="2000"
+                      src={aboutSalesImage}
+                      alt="cargo ship"
+                      className="w-full h-48 md:h-64 lg:h-72 object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 
