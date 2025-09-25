@@ -33,14 +33,11 @@ const Navbar = () => {
     <header
       className={
         navbarBgChanged
-          ? "bg-slate-200 fixed top-0 left-0 w-[100vw] z-20 duration-500 shadow-md py-4"
-          : "bg-transparent fixed top-0 left-0 w-[100vw] z-20 duration-500 py-4"
+          ? "fixed top-0 left-0 w-full z-30 duration-300 shadow-md py-3 bg-white/80 backdrop-blur-md"
+          : "fixed top-0 left-0 w-full z-30 duration-300 py-4 bg-transparent"
       }
     >
-      <nav
-        className="mx-full flex items-center justify-between px-[20px] lg:px-[100px]"
-        aria-label="Global"
-      >
+      <nav className="max-w-[1200px] mx-auto flex items-center justify-between px-4 md:px-8 lg:px-16" aria-label="Global">
         {/* {!mobileMenuOpen && !navbarBgChanged && (
           <img
             data-aos="fade-right"
@@ -61,7 +58,7 @@ const Navbar = () => {
         )} */}
 
         {/* Logo/Brand Name Section */}
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 items-center">
           {!mobileMenuOpen && (
             <Link
               to="/"
@@ -70,7 +67,7 @@ const Navbar = () => {
               <h1
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="text-2xl tracking-widest font-jost leading-[24px] font-normal uppercase mr-5"
+                className="text-lg md:text-2xl tracking-wide font-jost leading-[24px] font-semibold uppercase mr-3 md:mr-5"
               >
                 GrainPlus Logistics <br></br>
               </h1>
@@ -96,7 +93,7 @@ const Navbar = () => {
           </button>
         </div>
         {/* Desktop Navigation Links */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-10 lg:items-center hover:">
+  <Popover.Group className="hidden lg:flex lg:gap-x-8 lg:items-center">
           {navbarLinks.map((links, index) => {
             const { name, linkPath } = links;
             return (
@@ -113,17 +110,8 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Link
-            to={"/contact"}
-            data-aos="fade-left"
-            data-aos-duration="2000"
-            className="no-underline ml-[50px] hover:scale-105 duration-500"
-          >
-            <Button
-              variant={navbarBgChanged ? "black" : "white"}
-              ringVariant={navbarBgChanged ? "ring-black" : "ring-white"}
-              text={"Talk to us!"}
-            />
+          <Link to={'/contact'} data-aos="fade-left" data-aos-duration="2000" className="no-underline ml-4 md:ml-8 hover:scale-105 duration-200">
+            <Button variant={navbarBgChanged ? "black" : "white"} ringVariant={navbarBgChanged ? "ring-black" : "ring-white"} text={"Talk to us!"} />
           </Link>
         </Popover.Group>
         {/* Mobile Dialog Panel */}
@@ -135,7 +123,7 @@ const Navbar = () => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+  <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link
               to="/"
@@ -158,7 +146,7 @@ const Navbar = () => {
               <GrIcons.GrClose className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-[50px] flow-root">
+          <div className="mt-8 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navbarLinks.map((links, index) => {

@@ -10,99 +10,52 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="w-full bg-green-800 overflow-hidden py-[5rem] ">
-        <div class="h-1 bg-white mb-10 rounded-full mx-4 md:mx-10"></div>
-        <div className="md:flex gap-4 px-[20px] lg:px-[100px]">
-          <div className="md:basis-1/2">
+      <footer className="w-full bg-green-800 overflow-hidden py-16">
+  <div className="h-1 bg-white mb-8 rounded-full max-w-[1200px] mx-auto"></div>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8 lg:px-16">
+          <div className="md:col-span-1">
             <div>
               <Link to="/" className="text-white">
                 <h1
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="text-3xl tracking-widest font-jost leading-[24px] font-normal uppercase"
+                  className="text-2xl md:text-3xl tracking-widest font-jost leading-[24px] font-semibold uppercase"
                 >
                   GrainPlus Logistics <br /> <br />
                 </h1>
               </Link>
 
-              <p
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                className="w-full mt-4 font-jost md:w-8/12 text-white lg:leading-8 lg:text-lg"
-              >
-                <span className="font-semibold">Address: </span> Off KM 11,
-                Hadejia Road, Kano, Nigeria.
-              </p>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                className="w-full mt-4 font-jost md:w-8/12 text-white lg:leading-8 lg:text-lg"
-              >
-                <span className="font-semibold">Email: </span>
-                info@grainplus.org <br /> <br />
-                <span className="font-semibold">Phone: </span> +234 809 360 5855
-              </p>
+              <div className="mt-4 text-white space-y-3">
+                <div>
+                  <span className="font-semibold">Address: </span> Off KM 11, Hadejia Road, Kano, Nigeria.
+                </div>
+                <div>
+                  <span className="font-semibold">Email: </span> info@grainplus.org
+                </div>
+                <div>
+                  <span className="font-semibold">Phone: </span> +234 809 360 5855
+                </div>
+              </div>
             </div>
           </div>
-          <div className="mt-5 md:mt-0 md:basis-1/3">
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="text-3xl text-white tracking-widest font-jost leading-[24px] font-normal uppercase"
-            >
-              Quick Links
-            </h1>
-
-            <div className="mt-10">
-              {topLinkNavLinks.map((data, index) => {
-                const { linkPath, name } = data;
-                return (
-                  <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    key={index}
-                    className="w-full lg:leading-8 lg:text-lg mb-3"
-                  >
-                    <Link
-                      to={linkPath}
-                      className="no-underline text-white font-jost"
-                    >
-                      {name}
-                    </Link>
-                  </div>
-                );
-              })}
+          <div>
+            <h2 className="text-xl text-white tracking-wide font-jost font-semibold uppercase">Quick Links</h2>
+            <div className="mt-6 space-y-3">
+              {topLinkNavLinks.map((data, index) => (
+                <div key={index} className="text-white">
+                  <Link to={data.linkPath} className="no-underline hover:text-gray-200">{data.name}</Link>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="md:basis-1/3 mt-5 md:mt-0">
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="text-3xl text-white tracking-widest font-jost leading-[24px] font-normal uppercase"
-            >
-              Support Links
-            </h1>
-
-            <div className="mt-4">
-              {supportLinks.map((data, index) => {
-                const { linkName, path } = data;
-
-                return (
-                  <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    key={index}
-                    className="w-full lg:leading-8 lg:text-lg mb-4"
-                  >
-                    <Link
-                      to={path}
-                      className="no-underline text-white font-jost"
-                    >
-                      {linkName}
-                    </Link>
-                  </div>
-                );
-              })}
+          <div>
+            <h2 className="text-xl text-white tracking-wide font-jost font-semibold uppercase">Support</h2>
+            <div className="mt-6 space-y-3">
+              {supportLinks.map((data, index) => (
+                <div key={index} className="text-white">
+                  <Link to={data.path} className="no-underline hover:text-gray-200">{data.linkName}</Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>
