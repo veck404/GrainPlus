@@ -25,7 +25,7 @@ const Services = () => {
       </div>
       {/* <LogisticsCapabilities showLink={false} /> */}
       <ServiceSecOne />
-      <ContactRef />
+      {/* <ContactRef /> */}
     </>
   );
 };
