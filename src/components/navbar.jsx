@@ -165,7 +165,7 @@ const Navbar = () => {
                     <Link
                       key={index}
                       to={linkPath}
-                      className="-mx-3 block rounded- px-3 border-white/20 border-b py-4 text-[20px] font-semibold leading-7 text-gray-300 hover:bg-green-700/20"
+                      className="-mx-3 block rounded-lg px-3 border-white/20 border-b py-4 text-[20px] font-semibold leading-7 text-gray-300 hover:bg-green-700/20"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {name}
