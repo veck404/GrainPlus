@@ -19,7 +19,7 @@ const Footer = () => {
                 <h1
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="text-2xl md:text-3xl tracking-widest font-jost leading-[24px] font-semibold uppercase"
+                  className="site-title tracking-widest uppercase"
                 >
                   GrainPlus Logistics <br /> <br />
                 </h1>
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl text-white tracking-wide font-jost font-semibold uppercase">
+            <h2 className="section-title text-white tracking-wide uppercase">
               Quick Links
             </h2>
             <div className="mt-6 space-y-3">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl text-white tracking-wide font-jost font-semibold uppercase">
+            <h2 className="section-title text-white tracking-wide uppercase">
               Support
             </h2>
             <div className="mt-6 space-y-3">

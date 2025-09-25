@@ -68,7 +68,7 @@ const Navbar = () => {
               <h1
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                className="text-lg md:text-2xl tracking-wide font-jost leading-[24px] font-semibold uppercase mr-3 md:mr-5"
+                className="site-title tracking-wide uppercase mr-3 md:mr-5"
               >
                 GrainPlus Logistics <br></br>
               </h1>

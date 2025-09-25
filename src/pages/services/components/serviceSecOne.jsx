@@ -30,7 +30,7 @@ const ServiceSecOne = () => {
               data-aos-duration="2000"
               className="order-2"
             >
-              <h2 className="text-2xl md:text-3xl font-jost font-semibold text-gray-800">
+              <h2 className="section-title font-jost font-semibold text-gray-800">
                 Effortless Custom Clearance
               </h2>
               <p className="mt-4 text-gray-600">
@@ -49,7 +49,7 @@ const ServiceSecOne = () => {
               data-aos-duration="2000"
               className="order-2 lg:order-1"
             >
-              <h2 className="text-2xl md:text-3xl font-jost font-semibold text-gray-800">
+              <h2 className="section-title font-jost font-semibold text-gray-800">
                 Sea & Air Freight Forwarding
               </h2>
               <p className="mt-4 text-gray-600">
@@ -94,7 +94,7 @@ const ServiceSecOne = () => {
               data-aos-duration="2000"
               className="order-2"
             >
-              <h2 className="text-2xl md:text-3xl font-jost font-semibold text-gray-800">
+              <h2 className="section-title font-jost font-semibold text-gray-800">
                 Transportation Management
               </h2>
               <p className="mt-4 text-gray-600">
@@ -113,7 +113,7 @@ const ServiceSecOne = () => {
               data-aos-duration="2000"
               className="order-2 lg:order-1"
             >
-              <h2 className="text-2xl md:text-3xl font-jost font-semibold text-gray-800">
+              <h2 className="section-title font-jost font-semibold text-gray-800">
                 Warehousing and Distribution
               </h2>
               <p className="mt-4 text-gray-600">
