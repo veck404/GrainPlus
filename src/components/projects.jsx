@@ -43,16 +43,12 @@ const Projects = () => {
               <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="h-[200px] p-10 md:h-[180px] lg:h-[150px] xl:h-[200px] relative project_image_wrap w-full rounded-[10px] overflow-hidden"
-                style={{
-                  border: "3px solid black",
-                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 1)",
-                }}
+                className="relative project_image_wrap w-full rounded-lg overflow-hidden border-2 border-black shadow-lg sm:shadow-md transform transition-transform duration-300 hover:scale-105 active:scale-95 active:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-200"
+                tabIndex={0}
               >
                 <img
                   src={imageURL}
-                  width={"100%"}
-                  className="duration-700 h-full"
+                  className="w-full h-48 md:h-56 lg:h-64 object-cover duration-700"
                   alt={imageDescription}
                 />
               </div>

@@ -6,8 +6,6 @@ import * as GrIcons from "react-icons/gr";
 import { Link, useLocation } from "react-router-dom";
 import { navbarLinks } from "../data/navbarLinksData";
 import Button from "./button";
-import sbc from "../assets/logo/sbc.png";
-import sbcBlack from "../assets/logo/sbcb.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,7 +35,10 @@ const Navbar = () => {
           : "fixed top-0 left-0 w-full z-30 duration-300 py-4 bg-transparent"
       }
     >
-      <nav className="max-w-[1200px] mx-auto flex items-center justify-between px-4 md:px-8 lg:px-16" aria-label="Global">
+      <nav
+        className="max-w-[1200px] mx-auto flex items-center justify-between px-4 md:px-8 lg:px-16"
+        aria-label="Global"
+      >
         {/* {!mobileMenuOpen && !navbarBgChanged && (
           <img
             data-aos="fade-right"
@@ -93,7 +94,7 @@ const Navbar = () => {
           </button>
         </div>
         {/* Desktop Navigation Links */}
-  <Popover.Group className="hidden lg:flex lg:gap-x-8 lg:items-center">
+        <Popover.Group className="hidden lg:flex lg:gap-x-8 lg:items-center">
           {navbarLinks.map((links, index) => {
             const { name, linkPath } = links;
             return (
@@ -110,8 +111,17 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Link to={'/contact'} data-aos="fade-left" data-aos-duration="2000" className="no-underline ml-4 md:ml-8 hover:scale-105 duration-200">
-            <Button variant={navbarBgChanged ? "black" : "white"} ringVariant={navbarBgChanged ? "ring-black" : "ring-white"} text={"Talk to us!"} />
+          <Link
+            to={"/contact"}
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="no-underline ml-4 md:ml-8 hover:scale-105 duration-200"
+          >
+            <Button
+              variant={navbarBgChanged ? "black" : "white"}
+              ringVariant={navbarBgChanged ? "ring-black" : "ring-white"}
+              text={"Talk to us!"}
+            />
           </Link>
         </Popover.Group>
         {/* Mobile Dialog Panel */}
@@ -123,7 +133,7 @@ const Navbar = () => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0" />
-  <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link
               to="/"

@@ -27,7 +27,7 @@ const Triumphs = () => {
             data-aos-duration="2000"
             className="mt-8 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-green-700 font-[400]"
           >
-            Beyond Boundaries: Our Project Narratives
+            Beyond Boundaries: Our Business
           </h3>
           <div className="mt-9"></div>
           <Projects />

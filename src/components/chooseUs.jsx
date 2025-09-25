@@ -67,17 +67,17 @@ const ChooseUs = ({ floatDiraction }) => {
                             </div>
                             <div className="mt-2">
                               <div
-                                className={`stats_bar relative z-[1] before:absolute before:left-0 before:top-[50%] before:bg-gray-900 before:h-[2px] before:z-[2] before:translate-y-[-50%] ${
-                                  percentage === 95
-                                    ? // Dynamically sets the width of the progress bar based on the percentage.
-                                      "before:w-[95%]"
-                                    : null || percentage === 85
-                                    ? "before:w-[99.99%]"
-                                    : null || percentage === 75
-                                    ? "before:w-[75%]"
-                                    : null
-                                } bg-gray-300 w-full h-[1px]`}
-                              ></div>
+                                className="w-full bg-gray-300 h-2 rounded overflow-hidden"
+                                role="progressbar"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow={percentage}
+                              >
+                                <div
+                                  className="bg-gray-900 h-2 rounded"
+                                  style={{ width: `${percentage}%` }}
+                                />
+                              </div>
                             </div>
                           </div>
                         );
@@ -93,7 +93,16 @@ const ChooseUs = ({ floatDiraction }) => {
                 className="image_wrap mt-[100px] xl:w-[40%] xl:h-[100%] xl:mt-[100px] flex items-center justify-center"
               >
                 <div className="relative img_el before:absolute before:-top-[5%] before:-left-[5%] before:h-[100px] before:w-[100px] after:absolute after:-bottom-[5%] after:-right-[5%] after:h-[100px] after:w-[100px]">
-                  <img src={CargoImage} width={"100%"} alt="cargo ship" />
+                  <div
+                    className="rounded-lg overflow-hidden shadow-sm sm:shadow-md transform transition-transform duration-300 hover:scale-[1.02] hover:-translate-y-1 active:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-200"
+                    tabIndex={0}
+                  >
+                    <img
+                      src={CargoImage}
+                      className="w-full h-56 md:h-72 object-cover"
+                      alt="cargo ship"
+                    />
+                  </div>
                 </div>
                 {/* Decorative elements around the image */}
               </div>

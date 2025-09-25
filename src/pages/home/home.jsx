@@ -8,7 +8,7 @@ import ChooseUs from "../../components/chooseUs";
 import CarouselSlider from "./components/slider";
 import Triumphs from "./components/triumps";
 // import Highlights from "./components/highlights";
-import ContactRef from "../../components/contactRef";
+// ContactRef intentionally unused on home page
 // import OurStaff from "../../components/ourStaff";
 
 const HomePage = () => {

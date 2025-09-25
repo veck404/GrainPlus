@@ -55,21 +55,25 @@ const Highlights = () => {
                       data-aos-duration="2000"
                       className="no-underline"
                     >
-                      {/* News highlight wrapper */}
-                      <div className="highlight_wrap">
-                        <div className="news_image_wrapper h-[195px] overflow-hidden">
-                          {/* News image */}
-                          <img src={imageURL} width={"100%"} alt={title} />
+                      <div
+                        className="highlight_wrap rounded-lg overflow-hidden shadow-sm sm:shadow-md transform transition-transform duration-300 hover:scale-[1.02] hover:-translate-y-1 active:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-200"
+                        tabIndex={0}
+                      >
+                        <div className="news_image_wrapper h-40 md:h-48 overflow-hidden">
+                          <img
+                            src={imageURL}
+                            className="w-full h-full object-cover"
+                            alt={title}
+                          />
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-3 p-4">
                           <div className="text-gray-500 font-jost font-[500]">
-                            <div className="flex">
+                            <div className="flex text-sm">
                               <div>{date}</div>
                               <div className="ml-2">/ {category}</div>
                             </div>
                           </div>
-                          {/* News title */}
-                          <h3 className="text-gray-800 font-outfit font-[700] truncate text-[25px] leading-[25px]">
+                          <h3 className="text-gray-800 font-outfit font-[700] truncate text-lg md:text-xl mt-2 leading-tight">
                             {title}
                           </h3>
                         </div>

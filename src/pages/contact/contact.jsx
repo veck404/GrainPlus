@@ -34,7 +34,7 @@ const Contact = () => {
       </div>
       <div className="m-5 px-4 md:px-8 lg:px-16">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-xl shadow-md p-6 md:p-10">
+          <div className="bg-white rounded-xl shadow-md sm:shadow-md p-6 md:p-10 transform transition-transform duration-300 hover:scale-[1.01] hover:-translate-y-1 active:shadow-lg">
             <form
               action="https://formspree.io/f/xgedgjkr"
               method="POST"
@@ -83,13 +83,13 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+          <div className="bg-white rounded-xl shadow-md sm:shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-[1.01] hover:-translate-y-1 active:shadow-lg">
             <iframe
               title="Our location Iframe"
               src="https://www.google.com/maps?q=Kano,+Nigeria&z=12&output=embed"
               width="100%"
               height="100%"
-              style={{ minHeight: 350, border: 0 }}
+              style={{ minHeight: 300, border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
