@@ -10,7 +10,7 @@ const Triumphs = () => {
           <h4
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="text-green-800 mt-[50px] font-[500] text-[30px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[80px] xl:leading-[90px]"
+            className="text-green-800 mt-[50px] font-[600] text-[30px] leading-[40px] font-outfit md:text-[66px] md:leading-[66px] xl:text-[50px] xl:leading-[50px]"
           >
             Our Prestigious Clients
           </h4>

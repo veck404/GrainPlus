@@ -11,7 +11,7 @@ const ChooseUs = ({ floatDiraction }) => {
           <h2
             data-aos={`fade-right`}
             data-aos-duration="2000"
-            className="text-green-500 font-outfit mt-[50px] font-[600] text-[40px] leading-[40px] md:text-[66px] md:leading-[66px] xl:text-[90px] xl:leading-[90px]"
+            className="text-green-800 font-outfit mt-[50px] font-[600] text-[40px] leading-[40px] md:text-[50px] md:leading-[66px] xl:text-[50px] xl:leading-[90px]"
           >
             Why Us
           </h2>
@@ -22,7 +22,7 @@ const ChooseUs = ({ floatDiraction }) => {
                 <h3
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                  className="mt-5 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-green-500 font-[400]"
+                  className="mt-5 text-[18px] font-jost leading-[18px] lg:text-[32px] lg:leading-[32px] text-green-800 font-[400]"
                 >
                   We are Quick, Efficient, and Reliable.
                 </h3>
@@ -57,11 +57,11 @@ const ChooseUs = ({ floatDiraction }) => {
                           <div key={index} className="mt-5 font-jost">
                             <div className="flex">
                               <div className="mr-auto">
-                                <div className="text-gray-900">
+                                <div className="text-green-800">
                                   <p className="font-[500]">{name}</p>
                                 </div>
                               </div>
-                              <div className="text-gray-900">
+                              <div className="text-green-800">
                                 <p className="font-[500]">{percentage}%</p>
                               </div>
                             </div>
@@ -74,7 +74,7 @@ const ChooseUs = ({ floatDiraction }) => {
                                 aria-valuenow={percentage}
                               >
                                 <div
-                                  className="bg-gray-900 h-2 rounded"
+                                  className="bg-green-800 h-2 rounded"
                                   style={{ width: `${percentage}%` }}
                                 />
                               </div>

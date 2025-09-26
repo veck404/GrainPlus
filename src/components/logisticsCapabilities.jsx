@@ -16,13 +16,14 @@ const LogisticsCapabilities = ({ showLink }) => {
                   <ExternalLink
                     linkPath={"/services"}
                     linkText={"All Services"}
+                    className="text-green-800"
                   />
                 ) : null}
               </div>
               <h1
                 data-aos="fade-in"
                 data-aos-duration="2000"
-                className="text-gray-800 font-outfit mt-14 font-bold text-5xl leading-10 md:text-6xl md:leading-[60px] xl:text-8xl xl:leading-[96px]"
+                className="text-green-800 font-outfit mt-14 font-bold text-5xl leading-10 md:text-6xl md:leading-[60px] xl:text-8xl xl:leading-[96px]"
               >
                 Logistics <br /> Capabilities
               </h1>
@@ -30,7 +31,7 @@ const LogisticsCapabilities = ({ showLink }) => {
               <h3
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="mt-5 text-lg font-jost leading-5 lg:text-3xl lg:leading-8 text-gray-800 font-normal"
+                className="mt-5 text-lg font-jost leading-5 lg:text-3xl lg:leading-8 text-green-800 font-normal"
               >
                 Delivering Possibilities, On Time
               </h3>
