@@ -118,7 +118,7 @@ const Navbar = () => {
             className="no-underline ml-4 md:ml-8 hover:scale-105 duration-200"
           >
             <Button
-              variant={navbarBgChanged ? "black" : "white"}
+              variant={navbarBgChanged ? "brand" : "white"}
               ringVariant={navbarBgChanged ? "ring-black" : "ring-white"}
               text={"Talk to us!"}
             />
