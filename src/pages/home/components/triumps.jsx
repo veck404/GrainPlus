@@ -14,9 +14,6 @@ const Triumphs = () => {
           >
             Our Prestigious Clients
           </h4>
-          {/* <hr className="mt-9" /> */}
-
-          {/* <div className="mt-9"></div> */}
           <Projects />
         </div>
       </section>

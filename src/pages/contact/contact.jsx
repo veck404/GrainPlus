@@ -27,7 +27,7 @@ const Contact = () => {
         <h2
           data-aos={`fade-right`}
           data-aos-duration="2000"
-          className="text-green-900 font-outfit mt-[50px] font-[700] text-[35px] leading-[35px] md:text-[66px] md:leading-[66px] xl:text-[90px] xl:leading-[90px]"
+          className="text-green-900 font-outfit mt-[50px] font-[700] text-[35px] leading-[35px] md:text-[66px] md:leading-[66px] xl:text-[60px] xl:leading-[60px]"
         >
           Contact Us
         </h2>

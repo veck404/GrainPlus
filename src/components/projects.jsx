@@ -48,7 +48,7 @@ const Projects = () => {
               >
                 <img
                   src={imageURL}
-                  className="w-full h-36 md:h-36 lg:h-52 object-cover duration-700"
+                  className="w-full h-36 md:h-36 lg:h-36 object-cover duration-700"
                   alt={imageDescription}
                 />
               </div>

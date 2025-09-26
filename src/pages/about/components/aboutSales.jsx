@@ -19,7 +19,7 @@ const AboutSales = () => {
                 <h3
                   data-aos="fade-right"
                   data-aos-duration="2000"
-                  className="text-gray-800 font-jost text-3xl"
+                  className="text-green-800 font-jost text-3xl"
                 >
                   Elevating Business through Next-Level Logistics
                 </h3>
@@ -38,7 +38,7 @@ const AboutSales = () => {
 
               <div className="basis-1/2">
                 <div className="px-0 lg:px-10">
-                  <h5 className="text-gray-600 text-xl font-jost font-semibold">
+                  <h5 className="text-green-800 text-xl font-jost font-semibold">
                     Why Choose GrainPlus Logistics?
                   </h5>
 
