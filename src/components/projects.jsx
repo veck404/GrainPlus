@@ -8,13 +8,13 @@ const Projects = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,
+    speed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -43,12 +43,12 @@ const Projects = () => {
               <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="relative project_image_wrap w-full rounded-lg overflow-hidden border-2 border-black shadow-lg sm:shadow-md transform transition-transform duration-300 hover:scale-105 active:scale-95 active:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-200"
+                className="relative project_image_wrap w-full rounded-lg overflow-hidden border-2 border-green-600 shadow-lg sm:shadow-md transform transition-transform duration-300 hover:scale-105 active:scale-95 active:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-200"
                 tabIndex={0}
               >
                 <img
                   src={imageURL}
-                  className="w-full h-48 md:h-56 lg:h-64 object-cover duration-700"
+                  className="w-full h-36 md:h-36 lg:h-52 object-cover duration-700"
                   alt={imageDescription}
                 />
               </div>
